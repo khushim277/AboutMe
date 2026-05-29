@@ -1,0 +1,260 @@
+.sky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.sun {
+  position: absolute;
+  top: 100px;
+  right: 120px;
+  font-size: 80px;
+}
+
+.cloud {
+  position: absolute;
+  font-size: 70px;
+}
+
+.cloud1 {
+  top: 180px;
+  left: 120px;
+}
+
+.cloud2 {
+  top: 260px;
+  right: 250px;
+}
+
+.moon {
+  position: absolute;
+  top: 100px;
+  right: 120px;
+  font-size: 80px;
+}
+
+.stars {
+  position: absolute;
+  top: 180px;
+  left: 120px;
+  font-size: 40px;
+  letter-spacing: 25px;
+}
+
+/* Day mode: show sun/clouds, hide moon/stars */
+[data-mode="day"] .sun,
+[data-mode="day"] .cloud {
+  display: block;
+}
+
+[data-mode="day"] .moon,
+[data-mode="day"] .stars {
+  display: none;
+}
+
+/* Night mode: show moon/stars, hide sun/clouds */
+[data-mode="night"] .sun,
+[data-mode="night"] .cloud {
+  display: none;
+}
+
+[data-mode="night"] .moon,
+[data-mode="night"] .stars {
+  display: block;
+}
+
+/* Theme colours */
+[data-mode="day"] {
+  --bg: linear-gradient(to top, #f4b763, #7fb7e8);
+  --text: #1f1308;
+  --card: #fff7ec;
+  --accent: #c47b35;
+}
+
+[data-mode="night"] {
+  --bg: linear-gradient(to top,#000001, #200c7d, #6c23ad);
+  --text: #f2f4ff;
+  --card: #151b35;
+  --accent: #8aa4ff;
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth clicking between sections */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.5s;
+}
+
+/* Navigation bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  text-transform:uppercase;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 120px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 20px;
+  max-width: 500px;
+  line-height:1.2;
+  border-left: 4px solid var(--accent);
+  padding-left: 25px;
+}
+
+.button {
+  width: fit-content;
+  padding: 12px 22px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+	border-left: 4px solid var(--accent);
+  padding-left: 25px;
+}
+
+.card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 10px;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.card2 {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  transition: 0.3s;
+
+	color: var(--text);
+	text-decoration: none;
+}
+
+
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card2:hover {
+  transform: translateY(-8px);
+}
+
+#about h2 {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+#about p {
+    line-height: 1.9;
+    max-width:750px;
+    border-left: 4px solid var(--accent);
+    padding-left: 25px;
+}
+
+#skills h2 {
+	text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+#hobbies h2 {
+	text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+#contact h2 {
+	text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+
+
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
