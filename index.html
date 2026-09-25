@@ -1,22 +1,26 @@
+```html
 <!DOCTYPE html>
 <html lang="en" data-mode="day">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khushi's Profile Page</title>
+
+  <title>Khushi Mistry | Software Engineering</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<div class="sky">
-		<div class="sun">☀️</div>
-		<div class="cloud cloud1">☁️</div>
-		<div class="cloud cloud2">☁️</div>
+  <div class="sky">
+    <div class="sun">☀️</div>
+    <div class="cloud cloud1">☁️</div>
+    <div class="cloud cloud2">☁️</div>
 
-		<div class="moon">🌙</div>
-		<div class="stars">✨ ✦ ✨ ✦ ✨</div>
-	</div>
+    <div class="moon">🌙</div>
+    <div class="stars">✨ ✦ ✨ ✦ ✨</div>
+  </div>
 
   <nav>
     <h2>KM</h2>
@@ -25,6 +29,7 @@
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#hobbies">Hobbies</a>
       <a href="#contact">Contact</a>
     </div>
@@ -32,64 +37,277 @@
     <button id="toggle">☀️ Day</button>
   </nav>
 
+  <!-- HOME -->
   <section id="home" class="hero">
-    <h1>Hello, I’m <span>Khushi Mistry</span></h1>
-    <p>This is a website about me! Use the toggle on the top right corner to change the theme!</p>
-    <a href="#about" class="button">Explore</a>
-  </section>
 
-  <section id="about">
-    <h2>About Me</h2>
+    <h1>Hello, I'm <span>Khushi Mistry</span></h1>
+
     <p>
-      I am a second year software engineering and commerce student at UNSW. I have been eager to pursue a software engineering degree since I was fifteen
-			and programmed an arduino for the first time. In terms of projects, this is my first project! I spent my summer holidays and some of my free time 
-			last term learning HTML, CSS and broadening my JavaScript knowledge. Other than that, a few fun (or maybe boring) facts about me is that El Jannah 
-			and Yallah Eats are my favourite restaurants (yes, I am a bigback), I visited New York recently and I tried to start a band in highschool (it didn't work).
-			</p>
+      Software Engineering and Commerce student at UNSW with an interest in
+      backend development, full-stack development as well as building maintaining useful software.
+    </p>
+
+    <a href="#about" class="button">Explore 🔎</a>
+
   </section>
 
+  <!-- ABOUT -->
+  <section id="about">
+
+    <h2>About Me 🙋‍♀️</h2>
+
+    <p>
+      I'm a second-year Software Engineering and Commerce student at the
+      University of New South Wales (UNSW). My interest in software started when
+      I was fifteen and programmed an Arduino for the first time, and since then
+      I've continued developing my skills across backend, frontend and software
+      engineering overall. 
+    </p>
+
+    <p>
+      I particularly enjoy backend development and working with APIs, data and
+      application logic. Through university courses, personal projects and the UNSW
+      Software Development Society Training Program, I've worked with
+      various technologies including Python, TypeScript, JavaScript, FastAPI, Node.js,
+      Express and React.
+    </p>
+
+    <p>
+      Recently, I worked on <strong>BasketWise</strong>, a grocery comparison
+      platform developed as part of the UNSW DevSoc Training Program. Our team
+      won <strong>Best Project</strong>, and I primarily contributed to backend
+      development and data scraping using Python, FastAPI, REST APIs and SQLite.
+    </p>
+
+    <p>
+      Outside of software, I'm also involved in several UNSW societies and
+      currently serve as an Events Director for the Engineering Projects and
+      Innovation Society. I am also a growth partner for a job matching platform called Peeple. I enjoy working in teams, meeting new people and
+      combining technical problem-solving with communication and creativity.
+    </p>
+
+  </section>
+
+  <!-- SKILLS -->
   <section id="skills">
-    <h2>Skills</h2>
+
+    <h2>Skills 🎨</h2>
 
     <div class="cards">
-      <div class="card">HTML</div>
-      <div class="card">CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">TypeScript</div>
-      <div class="card">C</div>
+
+      <div class="card">
+        <h3>Languages</h3>
+        <p>Python</p>
+        <p>TypeScript</p>
+        <p>JavaScript</p>
+        <p>Java</p>
+        <p>C</p>
+        <p>C++</p>
+      </div>
+
+      <div class="card">
+        <h3>Frontend</h3>
+        <p>React</p>
+        <p>Next.js</p>
+        <p>Vite</p>
+        <p>HTML</p>
+        <p>CSS</p>
+      </div>
+
+      <div class="card">
+        <h3>Backend</h3>
+        <p>FastAPI</p>
+        <p>Node.js</p>
+        <p>Express.js</p>
+        <p>REST APIs</p>
+        <p>SQLite</p>
+      </div>
+
+      <div class="card">
+        <h3>Testing & Tools</h3>
+        <p>Jest</p>
+        <p>JUnit</p>
+        <p>Cypress</p>
+        <p>Git & GitHub</p>
+        <p>Linux</p>
+        <p>Shell Scripting</p>
+      </div>
+
     </div>
+
   </section>
 
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <h2>PROJECTS 👩‍💻</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>🛒 BasketWise</h3>
+
+        <p>
+          A grocery comparison platform that allows users to compare products
+          and grocery baskets across Coles, Woolworths, ALDI and Harris Farm.
+        </p>
+
+        <p>
+          I primarily contributed to backend development and datascraping using Python, FastAPI,
+          REST APIs and SQLite as part of the UNSW DevSoc Training Program.
+        </p>
+
+        <p><strong>🏆 Winner - Best Project</strong></p>
+
+        <p>
+          <a href="https://velvety-yeot-e7698e.netlify.app/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Live Project
+          </a>
+        </p>
+
+        <p>
+          <a href="https://github.com/jasonwidjajadev/basketwise"
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub Repository
+          </a>
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🎮 Unigotchi</h3>
+
+        <p>
+          A backend software engineering project developed using TypeScript,
+          Node.js, Express and Jest for COMP1531 at UNSW.
+        </p>
+
+        <p>
+          Developed RESTful APIs, session-based authentication, validation,
+          error handling and automated black-box tests while working in a
+          collaborative development team.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>💻 Personal Portfolio</h3>
+
+        <p>
+          The website you're currently viewing!
+        </p>
+
+        <p>
+          Designed and developed from scratch using HTML, CSS and JavaScript,
+          featuring responsive styling and an interactive day/night theme.
+        </p>
+
+        <p>
+          <a href="https://github.com/khushim277/AboutMe"
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub Repository
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- HOBBIES -->
   <section id="hobbies">
-    <h2>Hobbies</h2>
+
+    <h2>Outside of Coding 🌄</h2>
 
     <div class="cards">
+
       <div class="card">
-        <h3>Playing my guitar</h3>
-        <p>I started learning how to play in primary school and has been a hobby of mine ever since!</p>
+
+        <h3>🎸 Playing Guitar</h3>
+
+        <p>
+          I started learning guitar in primary school and it has been one of my
+          favourite hobbies ever since.
+        </p>
+
       </div>
 
       <div class="card">
-        <h3>Going on walks</h3>
-        <p>I love going on walks especially in the evening when the sun is setting or in the morning before I start my day.</p>
+
+        <h3>🌅 Going on Walks</h3>
+
+        <p>
+          I love going on walks, especially early in the morning or in the
+          evening when the sun is setting.
+        </p>
+
       </div>
 
-			<div class="card">
-        <h3>Sidequesting</h3>
-        <p>Whether its going to the beach, eating at a random cafe or getting malatang before uni tutorials, I love sidequesting with my friends!</p>
+      <div class="card">
+
+        <h3>🌏 Sidequesting</h3>
+
+        <p>
+          Whether it's going to the beach, trying a random cafe, travelling
+          somewhere new or getting malatang before a uni tutorial, I love
+          spontaneous sidequests with my friends.
+        </p>
+
       </div>
+
     </div>
+
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact</h2>
-			<p>Click the boxes below to get in touch📱</p>
-			<div class="cards">
-				<a href="mailto:khushi.mistry8786@gmail.com" class="card2">Email Me!</a>
-				<a href="https://www.linkedin.com/in/khushi-mistry-ba0b56371/" class="card2">LinkedIn</a>
-			</div>
+
+    <h2>Let's Connect ☎️</h2>
+
+    <p>
+      I'm always happy to connect and chat about software, projects,
+      internships or anything tech-related!
+    </p>
+
+    <div class="cards">
+
+      <a
+        href="mailto:khushi.mistry8786@gmail.com"
+        class="card2">
+        Email Me ✉️
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/khushi-mistry-ba0b56371/"
+        class="card2"
+        target="_blank"
+        rel="noopener noreferrer">
+        LinkedIn 📱
+      </a>
+
+      <a
+        href="https://github.com/khushim277"
+        class="card2"
+        target="_blank"
+        rel="noopener noreferrer">
+        GitHub 💻
+      </a>
+
+    </div>
+
   </section>
 
   <script src="script.js"></script>
+
 </body>
+
 </html>
+```

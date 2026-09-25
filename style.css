@@ -44,7 +44,7 @@
   letter-spacing: 25px;
 }
 
-/* Day mode: show sun/clouds, hide moon/stars */
+/* day mode -- show sun/clouds, hide moon/stars */
 [data-mode="day"] .sun,
 [data-mode="day"] .cloud {
   display: block;
@@ -55,7 +55,7 @@
   display: none;
 }
 
-/* Night mode: show moon/stars, hide sun/clouds */
+/* night mode - show moon/stars, hide sun/clouds */
 [data-mode="night"] .sun,
 [data-mode="night"] .cloud {
   display: none;
@@ -66,7 +66,7 @@
   display: block;
 }
 
-/* Theme colours */
+/* theme colour */
 [data-mode="day"] {
   --bg: linear-gradient(to top, #f4b763, #7fb7e8);
   --text: #1f1308;
@@ -81,26 +81,25 @@
   --accent: #8aa4ff;
 }
 
-/* Basic reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Smooth clicking between sections */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   transition: 0.5s;
 }
 
-/* Navigation bar */
+/* nav bar */
 nav {
   position: fixed;
   top: 0;
@@ -138,7 +137,7 @@ button {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Sections */
+/* sections */
 section {
   min-height: 100vh;
   padding: 120px 10%;
@@ -242,7 +241,7 @@ section {
 
 
 
-/* Mobile layout */
+/* mobile layout */
 @media (max-width: 700px) {
   nav {
     flex-direction: column;
