@@ -1,6 +1,6 @@
 # AboutMe 🌤️🌙
 
-A responsive personal portfolio website built using **HTML, CSS and JavaScript**.
+A responsive personal portfolio website built using HTML, CSS and JavaScript!
 
 This was one of my first personal web development projects and was created to practise frontend development while building a website that introduces who I am, my technical skills and my interests.
 
